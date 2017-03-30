@@ -12,9 +12,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        CommonTitleBar titleBar = new CommonTitleBar.Builder(this)
+        new CommonTitleBar.Builder(this)
                 .setTitle("首页")
-                .setRightIcon(R.mipmap.ic_launcher)
+                .setRightTitle("文章")
                 .setRightClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

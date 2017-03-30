@@ -75,6 +75,9 @@ public abstract class AbsTitleBar<P extends AbsTitleBar.Builder.TitleBarParams> 
 
     public abstract static class Builder{
 
+        public Builder(Context context, ViewGroup parent) {
+        }
+
         public abstract AbsTitleBar build();
 
         public static class TitleBarParams{
